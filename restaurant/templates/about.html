@@ -1,0 +1,60 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>About Us</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+          Based in Mumbai, Maharashtra, Little Lemon is a family owned
+          Indian restaurant, focused on traditional recipes served with a
+          modern twist.
+        </p>
+        <p>
+          The chefs draw inspiration from authentic Indian culture
+          and have a menu of 12-13 items.
+        </p>
+
+        <p>
+          The restaurant has a rustic and relaxed atmosphere with moderate
+          prices, making it a popular place for a meal any time of the day.
+        </p>
+
+        <p>
+          Little Lemon is owned by two Indian brothers, Aman & Chaman, who
+          did Hotel Management to pursue their shared dream of owning a
+          restaurant.
+        </p>
+
+        <p>
+          To craft the menu, Aman relies on family recipes and his experience
+          as a chef in Mumbai.
+        </p>
+
+        <p>
+          Chaman does all the marketing for the restaurant and led the effort to
+          expand the menu beyond classic Indian to incorporate additional
+          cuisines.
+        </p>
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'img/indian_chefs.jpg' %}"
+            alt="Little Lemon Chefs in Cooking"
+          />
+          <figcaption class="figure-caption">
+            Little Lemon Owners.
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}

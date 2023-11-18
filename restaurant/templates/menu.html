@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Menu</h1>
+<!--Begin col-->
+<div class="row">
+    <div class="column">
+        {% for item in menu.menu %}
+        <p>
+            <a href="{% url 'menu_item' pk=item.pk %}">
+                {{ item.name }}
+            </a>
+            <span class="menu-price">
+                &#8377; {{ item.price }}.00
+            </span>
+        </p>
+        {% endfor %}
+    </div>
+
+    <div class="column">
+        <figure class="figure">
+            <img src="{%static 'img/Menu.jpg' %}" alt="Menu" height="700" width="600">
+        </figure>
+    </div>
+</div>
+<!--End col-->
+{% endblock %}

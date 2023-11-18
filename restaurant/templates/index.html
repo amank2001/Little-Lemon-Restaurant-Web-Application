@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    <article id="hero">
+      <h1 class="heading_shadow">SPECIAL OFFER</h1>
+      <p>
+        30% Off This Weekend 
+      </p>
+      <a href="#" class="cta"> Book now </a>
+    </article>
+  </section>
+  <section>
+    <article>
+      <h2>Our New Menu</h2>
+      <img src="{% static 'img/Grill.jpg' %}">
+      <p>
+        Our menu consists of 12-13 mughlai and desi items based on Indian culture.
+      </p>
+      <p>
+        <a href="{% url 'menu' %}">See our new menu</a>
+      </p>
+    </article>
+    <article>
+      <h2>Book a table</h2>
+      <img src="{% static 'img/book_table.jpg' %}">
+      <p>
+        Reserve your table for an amazing and mouth-watering Indian dining experience &#128523;
+      </p>
+      <p>
+        <a href="{% url 'book' %}">Book your table now</a>
+      </p>
+    </article>
+    <article>
+      <h2>Opening Hours</h2>
+      <img src="{% static 'img/Head_chef.jpg' %}">
+      <p>
+        The Little Lemon Restaurant is open 7 days a week, except for public holidays. 
+      </p>
+      <ul>
+        <li>Mon - Fri: 10am - 10pm</li>
+        <li>Sat: 2pm - 12am</li>
+        <li>Sun: 2pm - 11pm</li>
+      </ul>
+    </article>
+  </section>
+{% endblock %}
