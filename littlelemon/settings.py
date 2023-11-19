@@ -76,14 +76,14 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'reservations',
-    #     'HOST' : '127.0.0.1',
-    #     'PORT' : '3306',
-    #     'USER' : 'root',
-    #     'PASSWORD' : 'Amankhan@2001',
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'reservations',
+        'HOST' : '127.0.0.1',
+        'PORT' : '3306',
+        'USER' : 'root',
+        'PASSWORD' : 'Amankhan@2001',
+    }
 }
 
 # The settings for media files have been updated for the Graded assessment
