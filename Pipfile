@@ -11,6 +11,7 @@ gunicorn = "*"
 psycopg-binary = "*"
 pillow = "*"
 docker = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
